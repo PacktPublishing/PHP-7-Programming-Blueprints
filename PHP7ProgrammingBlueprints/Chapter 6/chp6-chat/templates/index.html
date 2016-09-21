@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat application</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <style>
+        body {
+            padding: 3em;
+        }
+
+        #messages {
+            padding-top: 3em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <input class="form-control" type="text" id="message" title="Your message"
+                       placeholder="Your message..."/>
+                <span class="input-group-btn">
+                    <button id="submit" class="btn btn-primary">Send</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="messages"></div>
+    </div>
+</div>
+
+</body>
+</html>

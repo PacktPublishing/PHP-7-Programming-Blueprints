@@ -1,0 +1,23 @@
+{
+  "name": "packt/chp6-chat",
+  "authors": [
+    "Martin Helmich <kontakt@martin-helmich.de>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6"
+  }
+}

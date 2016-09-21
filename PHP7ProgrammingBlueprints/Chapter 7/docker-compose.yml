@@ -1,0 +1,37 @@
+checkout:
+  build: checkout
+  ports:
+    - '5557:5557'
+    - '8080:8080'
+  volumes:
+    - checkout:/usr/src/app
+  links:
+    - inventory:inventory
+
+mailing:
+  build: mailing
+  volumes:
+    - mailing:/usr/src/app
+  links:
+    - checkout:checkout
+
+inventory:
+  build: inventory
+  volumes:
+    - inventory:/usr/src/app
+
+shippingmaster:
+  build: shipping
+  command: php master.php
+  volumes:
+    - shipping:/usr/src/app
+  links:
+    - checkout:checkout
+
+shippingworker:
+  build: shipping
+  command: php worker.php
+  volumes:
+    - shipping:/usr/src/app
+  links:
+    - shippingmaster:shippingmaster

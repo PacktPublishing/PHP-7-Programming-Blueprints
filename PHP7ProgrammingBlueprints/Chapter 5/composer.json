@@ -1,0 +1,23 @@
+{
+    "name": "packt-php7/chp5-rest-example",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "php7-book@martin-helmich.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "slim/slim": "^3.1",
+        "mongodb/mongodb": "^1.0",
+        "phpunit/phpunit": "^5.1",
+        "helmich/mongodb-gridfs": "dev-master",
+        "ext-mongodb": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp5\\": "src/"
+        }
+    }
+}

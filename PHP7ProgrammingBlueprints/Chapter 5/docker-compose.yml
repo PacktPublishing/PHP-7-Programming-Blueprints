@@ -1,0 +1,11 @@
+web:
+  build: .
+  volumes:
+    - .:/var/www/html
+  ports:
+    - 80:80
+  links:
+    - db:db
+
+db:
+  image: mongo:3

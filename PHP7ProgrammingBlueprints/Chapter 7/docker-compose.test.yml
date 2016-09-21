@@ -1,0 +1,7 @@
+test:
+  build: checkout
+  external_links:
+    - chp7microservices_checkout_1:checkout
+  command: php client.php
+  volumes:
+    - checkout:/usr/src/app

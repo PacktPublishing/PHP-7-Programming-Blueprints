@@ -1,0 +1,19 @@
+{
+    "name": "packt-php7/chp7-mailing",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "php7-book@martin-helmich.de"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0.0",
+        "react/zmq": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp7\\Mailing\\": "src/"
+        }
+    }
+}

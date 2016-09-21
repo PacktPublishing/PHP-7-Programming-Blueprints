@@ -1,0 +1,20 @@
+{
+    "name": "packt-php7/chp6-chat",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "kontakt@martin-helmich.de"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.3.4",
+        "react/http": "^0.4.1",
+        "slim/slim": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp6\\": "src/"
+        }
+    }
+}

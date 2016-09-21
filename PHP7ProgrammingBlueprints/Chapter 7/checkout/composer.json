@@ -1,0 +1,20 @@
+{
+    "name": "packt-php7/chp7-checkout",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "php7-book@martin-helmich.de"
+        }
+    ],
+    "require": {
+        "react/zmq": "^0.3.0",
+        "react/promise": "^2.2",
+        "react/http": "^0.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp7\\Checkout\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "packt-php7/chp6-example",
+    "require": {
+        "cboden/ratchet": "^0.3.4"
+    },
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "php7-book@martin-helmich.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp6\\Example\\": "src/"
+        }
+    }
+}

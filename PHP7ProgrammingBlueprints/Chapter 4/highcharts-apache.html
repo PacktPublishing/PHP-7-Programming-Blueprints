@@ -1,0 +1,87 @@
+
+
+<script>
+
+$(function () { 
+  client.search({
+      index: 'apachelogs',
+      type: 'logs',
+      body: {
+      query: {
+	    "match_all": {
+	      
+	    },
+	    { 
+		"range": {
+		    "epoch_date": {
+			"lt": <?php echo mktime(0,0,0, date('n'), date('j'), date('Y') ) ?>,
+
+			"gte": <?php echo mktime(0,0,0, date('n'), date('j'), date('Y')+1 ) ?>
+		 }
+	      }
+	    } 
+          }
+       }
+}).then(function (resp) {
+    var hits = resp.hits.hits;
+    var logCounts = new Array();
+    _.map(resp.hits.hits, function(count)
+    {logCounts.push(count.count)});
+
+  $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Apache Logs'
+        },
+        xAxis: {
+            categories: logDates
+        },
+        yAxis: {
+            title: {
+                text: 'Log Volume'
+            }
+        },
+	plotLines: [{
+		value: 0,
+		width: 1,
+		color: '#87D82F'
+		}]
+	},
+	tooltip: {
+	valueSuffix: ' logs'
+	 },
+	plotOptions: {
+	series: {
+		cursor: 'pointer',
+		point: {
+	},
+	marker: {
+	   lineWidth: 1
+	    }
+	  }
+	},
+	   legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle',
+		borderWidth: 0
+	   },
+	   series: [{
+	    name: 'Volumes',
+	    data: logCounts
+	    }]
+	   }); 
+
+}, function (err) {
+    console.trace(err.message);
+    $('#container').html('We did not get any data');
+});
+
+
+});
+	</script>
+
+	<div id="container" style="width:100%; height:400px;"></div>
+

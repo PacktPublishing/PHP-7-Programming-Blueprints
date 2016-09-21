@@ -1,0 +1,30 @@
+{
+  "name": "packt-php7/chp8-calculator",
+  "authors": [
+    {
+      "name": "Martin Helmich",
+      "email": "php7-book@martin-helmich.de"
+    }
+  ],
+  "require": {
+    "hafriedlander/php-peg": "dev-master",
+    "phpunit/phpunit": "^5.3",
+    "phpbench/phpbench": "^0.11.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Packt\\Chp8\\DSL\\": "src/"
+    },
+    "files": [
+      "vendor/hafriedlander/php-peg/autoloader.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Packt\\Chp8\\DSL\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  }
+}

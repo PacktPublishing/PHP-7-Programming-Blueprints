@@ -1,0 +1,18 @@
+{
+    "name": "packt-php7/chp7-inventory",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Helmich",
+            "email": "php7-book@martin-helmich.de"
+        }
+    ],
+    "require": {
+        "react/zmq": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packt\\Chp7\\Inventory\\": "src/"
+        }
+    }
+}
