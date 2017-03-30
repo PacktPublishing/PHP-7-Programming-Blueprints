@@ -8,10 +8,10 @@ This is the code repository for [PHP 7 Programming Blueprints](https://www.packt
 The book is for web developers, PHP consultants, and anyone who is working on multiple
 projects with PHP. Basic knowledge of PHP programming is assumed.
 
-###Software Requirements
+### Software Requirements
 You’ll need to download and install PHP 7 from the official PHP website. You’ll also need to install a Webserver such as Apache or Nginx configured to run PHP 7 by default. If you are experienced with virtual machines, you can also use Docker containers and/or Vagrant to build an environment with PHP 7 installed. 
 
-###Related Books
+### Related Books
 
 * [Building Websites with PHP-Nuke](https://www.packtpub.com/web-development/building-websites-php-nuke?utm_source=github&utm_medium=repository&utm_campaign=9781904811053)
 
@@ -19,7 +19,7 @@ You’ll need to download and install PHP 7 from the official PHP website. You�
 
 * [AJAX and PHP: Building Responsive Web Applications](https://www.packtpub.com/web-development/ajax-and-php-building-responsive-web-applications?utm_source=github&utm_medium=repository&utm_campaign=9781904811824)
 
-###Suggestions and Feedback
+### Suggestions and Feedback
  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
 
 
